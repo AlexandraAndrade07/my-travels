@@ -1,13 +1,13 @@
 import React from "react";
 
-const Quote = ({ destination, country, photo, distance }) => (
+const Travel = ({ destination, country, photo, distance }) => (
   <figure>
-    <img src={photo}/>
+    <img src={photo} alt={destination} className="photo"/>
     <figcaption>
-      <blockquote>{destination} - {distance}</blockquote>
+      <blockquote className="PropiertiesTravels">{destination} - {distance}</blockquote>
       <cite>{country}</cite>
     </figcaption>
   </figure>
 );
 
-export default Quote;
+export default Travel;
